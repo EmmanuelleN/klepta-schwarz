@@ -1,0 +1,13 @@
+I"=<div class="Navbar container">
+  <p class="Navbar-firstname">Alexis </p>
+  <div>
+    <p class="Navbar-lastname">Fantozzi</p>
+    <a href="#">A propos</a>
+    <a href="#">Photos</a>
+    <a href="#">Vidéos</a>
+    <a href="#">Performances</a>
+    <a href="#">Recherches</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+:ET

@@ -1,0 +1,14 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  font-size: 11vh;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  font-weight: bolder;
+
+  a {
+    &:hover {
+      color: $ultra-violet;
+    }
+  }
+}

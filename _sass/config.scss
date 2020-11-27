@@ -1,0 +1,29 @@
+// Breakpoints
+
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+
+// Colors
+$ultra-violet: #6A58EC;
+
+// Fonts
+
+@font-face {
+  font-family: "Gangster Grotesk";
+  src: url("/assets/fonts/GangsterGrotesk-Regular.otf");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Gangster Grotesk";
+  src: url("/assets/fonts/GangsterGrotesk-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Gangster Grotesk";
+  src: url("/assets/fonts/GangsterGrotesk-Light.otf");
+  font-weight: light;
+}

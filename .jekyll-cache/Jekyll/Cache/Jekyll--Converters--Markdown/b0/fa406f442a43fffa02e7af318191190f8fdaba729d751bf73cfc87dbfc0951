@@ -1,9 +1,4 @@
----
-layout: default
-title: "Alexis Fantozzi"
----
-
-<div class="Navbar container">
+I"d<div class="container">
   <p class="Navbar-firstname">Alexis</p>
   <div>
     <p class="Navbar-lastname">Fantozzi</p>
@@ -18,3 +13,4 @@ title: "Alexis Fantozzi"
 
   </div>
 </div>
+:ET
