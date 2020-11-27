@@ -1,0 +1,17 @@
+.Navbar {
+  display: flex;
+
+  &-firstname {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  &-lastname {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+}

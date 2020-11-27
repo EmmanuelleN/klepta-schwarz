@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/config.scss",
+		"_sass/main.scss",
+		"_sass/navbar.scss",
+		"_sass/footer.scss",
+		"_sass/home.scss"
+	],
+	"sourcesContent": [
+		"@import \"config\";\n@import \"main\";\n@import \"navbar\";\n@import \"footer\";\n@import \"home\";\n",
+		"// Breakpoints\n\n$sm: 640px;\n$md: 768px;\n$lg: 1024px;\n$xl: 1280px;\n\n// Colors\n$ultra-violet: #6A58EC;\n\n// Fonts\n\n@font-face {\n  font-family: \"Gangster Grotesk\";\n  src: url(\"/assets/fonts/GangsterGrotesk-Regular.otf\");\n  font-weight: regular;\n}\n\n@font-face {\n  font-family: \"Gangster Grotesk\";\n  src: url(\"/assets/fonts/GangsterGrotesk-Bold.otf\");\n  font-weight: bold;\n}\n\n@font-face {\n  font-family: \"Gangster Grotesk\";\n  src: url(\"/assets/fonts/GangsterGrotesk-Light.otf\");\n  font-weight: light;\n}\n",
+		"$backgroundColor: #ffffff;\n$bodyColor: #000000;\n$bodyFont: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\";\n\nbody {\n  background: $backgroundColor;\n  color: $bodyColor;\n  font-family: $bodyFont;\n  margin: 0;\n  min-height: 100vh;\n  font-family: \"Gangster Grotesk\";\n}\n\na {\n  text-decoration: none;\n  color: inherit;\n}\n\n.container {\n  margin: 0 1.5rem;\n\n  @media (min-width: $md) {\n    width: 750px;\n    margin: 0 auto;\n  }\n\n  @media (min-width: $lg) {\n    width: 970px;\n  }\n\n  @media (min-width: $xl) {\n    width: 1170px;\n  }\n}\n",
+		".Navbar {\n  display: flex;\n\n  &-firstname {\n    margin-right: 0.5rem;\n    font-size: 2rem;\n    margin-top: 0;\n    text-transform: uppercase;\n  }\n\n  &-lastname {\n    font-size: 2rem;\n    margin-bottom: 1rem;\n    margin-top: 0;\n    text-transform: uppercase;\n  }\n}\n",
+		"@keyframes scroll {\n  0%    { left: 0; }\n  100%  { left: -100%; }\n}\n\n.Footer {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  height: 2.5rem;\n  background-color: $ultra-violet;\n  text-transform: uppercase;\n  font-weight: bolder;\n  white-space: nowrap;\n  overflow: hidden;\n\n  &-text {\n    margin: 0;\n    transform: translate(0, -50%);\n    position: absolute;\n    left: 0;\n    top: 50%;\n    animation: scroll 10s linear infinite;\n  }\n}\n",
+		".Home {\n  display: flex;\n  flex-direction: column;\n  font-size: 11vh;\n  text-transform: uppercase;\n  margin-bottom: 4rem;\n  font-weight: bolder;\n\n  a {\n    &:hover {\n      color: $ultra-violet;\n    }\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "ACYA,UAAU,GACR,WAAW,EAAE,kBAAkB,EAC/B,GAAG,EAAE,gDAAgD,EACrD,WAAW,EAAE,OAAO;;AAGtB,UAAU,GACR,WAAW,EAAE,kBAAkB,EAC/B,GAAG,EAAE,6CAA6C,EAClD,WAAW,EAAE,IAAI;;AAGnB,UAAU,GACR,WAAW,EAAE,kBAAkB,EAC/B,GAAG,EAAE,8CAA8C,EACnD,WAAW,EAAE,KAAK;;ACvBpB,AAAA,IAAI,CAAC,EACH,UAAU,EALM,OAAO,EAMvB,KAAK,EALK,OAAO,EAMjB,WAAW,EALF,aAAa,EAAC,kBAAkB,EAAC,UAAU,EAAC,SAAS,EAAC,KAAK,EAAC,UAAU,EAAC,mBAAmB,EAAC,gBAAgB,EAAC,iBAAiB,EAMtI,MAAM,EAAE,CAAC,EACT,UAAU,EAAE,KAAK,EACjB,WAAW,EAAE,kBAAkB,GAChC;;AAED,AAAA,CAAC,CAAC,EACA,eAAe,EAAE,IAAI,EACrB,KAAK,EAAE,OAAO,GACf;;AAED,AAAA,UAAU,CAAC,EACT,MAAM,EAAE,QAAQ,GAcjB;;AAZC,MAAM,mBAHR,GAAA,AAAA,UAAU,CAAC,EAIP,KAAK,EAAE,KAAK,EACZ,MAAM,EAAE,MAAM,GAUjB,EAAA;;AAPC,MAAM,oBARR,GAAA,AAAA,UAAU,CAAC,EASP,KAAK,EAAE,KAAK,GAMf,EAAA;;AAHC,MAAM,oBAZR,GAAA,AAAA,UAAU,CAAC,EAaP,KAAK,EAAE,MAAM,GAEhB,EAAA;;ACjCD,AAAA,OAAO,CAAC,EACN,OAAO,EAAE,IAAI,GAed;;AAhBD,AAGE,iBAHK,CAGO,EACV,YAAY,EAAE,MAAM,EACpB,SAAS,EAAE,IAAI,EACf,UAAU,EAAE,CAAC,EACb,cAAc,EAAE,SAAS,GAC1B;;AARH,AAUE,gBAVK,CAUM,EACT,SAAS,EAAE,IAAI,EACf,aAAa,EAAE,IAAI,EACnB,UAAU,EAAE,CAAC,EACb,cAAc,EAAE,SAAS,GAC1B;;ACfH,UAAU,CAAV,MAAU,GACR,EAAE,GAAM,IAAI,EAAE,CAAC;EACf,IAAI,GAAI,IAAI,EAAE,KAAK;;AAGrB,AAAA,OAAO,CAAC,EACN,QAAQ,EAAE,KAAK,EACf,MAAM,EAAE,CAAC,EACT,IAAI,EAAE,CAAC,EACP,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,MAAM,EACd,gBAAgB,EHHH,OAAO,EGIpB,cAAc,EAAE,SAAS,EACzB,WAAW,EAAE,MAAM,EACnB,WAAW,EAAE,MAAM,EACnB,QAAQ,EAAE,MAAM,GAUjB;;AApBD,AAYE,YAZK,CAYE,EACL,MAAM,EAAE,CAAC,EACT,SAAS,EAAE,kBAAkB,EAC7B,QAAQ,EAAE,QAAQ,EAClB,IAAI,EAAE,CAAC,EACP,GAAG,EAAE,GAAG,EACR,SAAS,EAAE,0BAA0B,GACtC;;ACxBH,AAAA,KAAK,CAAC,EACJ,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,EACtB,SAAS,EAAE,IAAI,EACf,cAAc,EAAE,SAAS,EACzB,aAAa,EAAE,IAAI,EACnB,WAAW,EAAE,MAAM,GAOpB;;AAbD,AASI,KATC,CAQH,CAAC,CACG,KAAK,CAAC,EACN,KAAK,EJFI,OAAO,GIGjB"
+}
